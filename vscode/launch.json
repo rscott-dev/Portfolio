@@ -1,0 +1,21 @@
+{
+    // Alt L + Alt O to TEST (Run on Live Server)
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
+
+// Notes
+/*
+    Make the top of the game page better. Ditch the idea of repeating the card layout on the title and description of the game, or the "hero card".
+    We will now have a proper title, and the description, year, etc will be properly fitted below it. make sure it still works with any screen size and is elegant like the rest of the program
+    Remove unused code.
+    Make the tags clickable, when clicked they will go back to home page with the tag as the filter selection for simplicity.
+*/

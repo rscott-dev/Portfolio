@@ -1,0 +1,60 @@
+{
+  "experience": [
+    {
+      "company": "Specialty Equipment Market Association (SEMA)",
+      "image": "https://www.sema.org/themes/custom/sema/assets/images/SEMA-logo.png",
+      "location": "Diamond Bar, CA",
+      "roles": [
+        {
+          "title": "Data Operations Coordinator",
+          "duration_start": "6/2/2025",
+          "duration_end": "Present",
+          "summary": "Leading the core infrastructure team focused on low-latency data processing.",
+          "details": "Spearheaded the migration to a micro-frontend architecture."
+        }
+      ]
+    },
+    {
+      "company": "Knights of Creation",
+      "image": "https://static.wixstatic.com/media/f25725_d52bf8aa303c43dab9c0ed8216cc9a1d~mv2.webp/v1/fill/w_374,h_374,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo.webp",
+      "location": "Los Angeles, CA",
+      "roles": [
+        {
+          "title": "Data Engineer",
+          "duration_start": "2020",
+          "duration_end": "4/30/2025",
+          "summary": "Engineered a custom database management system with automated synchronization and integrated logic layers, streamlining data integrity and reducing manual administrative overhead by 95%.",
+          "details": "Spearheaded the migration to a micro-frontend architecture."
+        }
+      ]
+    },
+    {
+      "company": "Maxgames Studios",
+      "image": "https://play-lh.googleusercontent.com/aKJKghrZhGas4GwOH3z5x0bbL35vlpxlKAXaOSHzzpbswF_0Cr9kk2SFg1SpfeHNR6I=s94-rw",
+      "location": "Remote",
+      "roles": [
+        {
+          "title": "Senior QA Engineer",
+          "duration_start": "5/9/2017",
+          "duration_end": "8/01/2022",
+          "summary": "Promoted to lead QA strategy for mobile titles.",
+          "details": "Managed a team of 3 testers and implemented automated regression suites."
+        },
+        {
+          "title": "Quality Assurance Engineer",
+          "duration_start": "3/11/2015",
+          "duration_end": "5/9/2017",
+          "summary": "Developed and maintained payment integration APIs.",
+          "details": "Implemented 3D Secure 2.0 authentication. Reduced API response times by 150ms."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Open Source Contribution",
+      "description": "A high-performance utility library for modern JavaScript applications.",
+      "image": "https://via.placeholder.com/400x250"
+    }
+  ]
+}

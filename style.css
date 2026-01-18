@@ -1,0 +1,127 @@
+:root {
+    --li-blue: #0a66c2;
+    --li-bg: #f3f2ef;
+    --li-border: #e0e0e0;
+    --li-text: #191919;
+    --li-muted: #666666;
+}
+
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--li-bg);
+    color: var(--li-text);
+    margin: 0;
+}
+
+.container { max-width: 800px; margin: 0 auto; padding: 0 1rem; }
+nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav a { text-decoration: none; color: var(--li-muted); font-weight: 600; font-size: 0.9rem; }
+.section-title { font-size: 1.25rem; margin-bottom: 1.5rem; }
+
+/* Timeline UI */
+.timeline {
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid var(--li-border);
+    padding: 24px;
+    overflow: hidden; /* Keeps the timeline line from spilling out */
+}
+
+.exp-item {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    padding-bottom: 32px;
+}
+
+/* THE CONTINUOUS LINE */
+/* This bridges the gap between different companies */
+.exp-item::after {
+    content: "";
+    position: absolute;
+    left: 24px; /* Perfectly centered under the 48px logo */
+    top: 48px;  /* Starts at bottom of logo */
+    bottom: -32px; /* Reaches down to next company's logo */
+    width: 2px;
+    background: var(--li-border);
+    z-index: 1;
+}
+
+.exp-item:last-child::after {
+    display: none; /* No line after the last job */
+}
+
+.company-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    object-fit: contain;
+    background: white;
+    z-index: 5;
+    position: relative;
+}
+
+.exp-content { flex: 1; z-index: 2; }
+.more-content { display: none; margin-top: 8px; }
+.more-content.active { display: block; }
+
+.btn-toggle {
+    background: none;
+    border: none;
+    color: var(--li-muted);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+.btn-toggle:hover { text-decoration: underline; color: var(--li-blue); }
+
+/* PROMOTION STYLES */
+.roles-container {
+    position: relative;
+    margin-top: 16px;
+}
+
+/* INTERNAL LINE: Connects roles within the SAME company */
+.roles-container::before {
+    content: "";
+    position: absolute;
+    left: -40px; 
+    top: -20px;
+    bottom: 0;
+    width: 2px;
+    background: var(--li-border);
+    z-index: 1;
+}
+
+.role-entry {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+/* THE PROMOTION DOT */
+.role-entry.show-dot::before {
+    content: "";
+    position: absolute;
+    /* Centered on the line: (line_left - dot_radius + half_line_width) */
+    left: -47.5px; 
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    background: var(--li-border);
+    border: 3px solid white;
+    border-radius: 50%;
+    z-index: 6;
+}
+
+
+
+/* Project Grid */
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+.project-card { background: white; border: 1px solid var(--li-border); border-radius: 8px; overflow: hidden; }
+.project-card img { width: 100%; height: 150px; object-fit: cover; }
+.p-pad { padding: 12px; }
